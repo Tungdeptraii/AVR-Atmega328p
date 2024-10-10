@@ -1,0 +1,56 @@
+
+#include <mega328p.h>
+#include <delay.h>
+
+unsigned int n;
+
+//truyen 1 ki tu du lieu 
+void putchar(unsigned char data){
+    while(!(UCSR0A & 0b00100000));   //cho thanh ghi du lieu EMPTY
+    UDR0 = data;
+}
+
+//nhan 1 ki tu bang ngat RX
+interrupt [USART_RXC] void usart_rx_isr(void){
+    unsigned char rxdata;
+    rxdata = UDR0; 
+    putchar(rxdata);
+}
+
+void putString(char* str){
+
+    while(*str) {
+        putchar(*str);
+        str++;
+    
+    }
+    
+
+
+} 
+
+
+void main(void)
+{
+
+n = 103;
+UBRR0H = n>>8;
+UBRR0L = n;
+UCSR0C = 0b00000110;     
+UCSR0B = 0b10011000;
+
+//putchar('a');
+
+
+
+//cho phep ngat toan cuc
+#asm("sei")
+
+while (1)
+    {
+    putString("Hello");
+    delay_ms(1000);
+    // Please'/ write your application code here   
+      
+    }
+}

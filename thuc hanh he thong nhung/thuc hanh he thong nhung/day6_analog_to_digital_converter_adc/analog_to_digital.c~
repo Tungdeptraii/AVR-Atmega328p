@@ -1,0 +1,47 @@
+/*
+ * analog_to_digital.c
+ *
+ * Created: 30/3/2023 8:30:26 AM
+ * Author: User
+ */
+
+#include <mega328p.h>
+#include <delay.h>
+#define scale 128
+#include "usart.h"
+#include "ADCLib.h"
+unsigned long ADC_val;
+unsigned long voltage_val;
+unsigned long demi_part;
+unsigned long int_part;
+
+void main(void)   
+{
+adc_init(0);  
+uart_init();
+
+while (1)
+    {
+    // Please write your application code here   
+    
+    ADC_read(0);
+    ADC_val = ADCW;
+    putstring("Gia tri ADC: ");
+    put_int(ADC_val);
+    putstring("\n");
+    voltage_val = ADC_val*500/1024;
+    put_int(voltage_val);
+    putstring("\n");
+    
+    demi_part = voltage_val % 100; 
+    int_part = voltage_val / 100;
+    putstring("Gia tri dien ap: ");
+    put_int(int_part);
+    putstring(".");
+    put_int(demi_part);
+    putstring(" vol \n");
+    delay_ms(3000);   
+    
+    
+    }
+}

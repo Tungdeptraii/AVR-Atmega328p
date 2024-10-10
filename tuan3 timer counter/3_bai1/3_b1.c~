@@ -1,0 +1,17 @@
+/*
+ * 3_b1.c
+ *
+ * Created: 3/5/2024 11:00:04 AM
+ * Author: letung
+ */
+
+#include <mega328p.h>
+
+void main(void)
+{
+while (1)
+    {
+    // Please write your application code here
+
+    }
+}

@@ -1,0 +1,82 @@
+
+#include <mega328p.h>
+#include <delay.h>
+
+unsigned int n;
+
+//truyen 1 ki tu du lieu 
+void putchar(unsigned char data){
+    while(!(UCSR0A & 0b00100000));   //cho thanh ghi du lieu EMPTY
+    UDR0 = data;
+}
+
+void putInt(int value){
+    unsigned char buf[8];
+    int index  = 0, i, j;
+    j = value;
+    do {
+        buf[index] = j%10 +48; //chuyen gia tri sang ky tu
+        j = j/10;
+        index +=1;
+        
+        } while(j);
+        
+        
+    for (i = index; i >0; i--){      
+        putchar(buf[i-1]);
+    
+    }    
+    
+    
+}
+
+    
+interrupt [TIM1_OVF] void timer1_ovf_isr (void)
+{
+	PORTB.5 = !PORTB.5;
+	TCNT1H = 0xC2;
+	TCNT1L = 0xF7;
+	putInt(TCNT0);
+}
+
+
+
+void main(void)
+{
+
+    n = 103;
+    UBRR0H = n>>8;
+    UBRR0L = n;
+    UCSR0C = 0b00000110;     
+    UCSR0B = 0b10011000;
+
+    DDRB  |= 0b00100000;
+    PORTB &= 0b11011111;
+    DDRD = 0b11101111;
+    PORTD &= 0xF0;
+    TCCR0B = 0b00000111;
+    
+    TCCR1A = 0x00;    
+    TCCR1B = 0b00000101;    //pre = 1024
+    //thanh ghi 16bit -> max=2^16
+    //chu ki T = 1s
+
+    TCNT1H = 0xD9;
+    TCNT1L = 0xD9;
+    TIMSK1 = 0x01;
+
+    TCCR0A = 0x00;
+    TCCR0B |= 0b00000111;
+    TCNT0 = 0x00;
+
+
+
+//cho phep ngat toan cuc
+#asm("sei")
+
+while (1)
+    {
+     
+      
+    }
+}

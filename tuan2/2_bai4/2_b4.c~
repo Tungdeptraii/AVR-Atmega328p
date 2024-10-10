@@ -1,0 +1,41 @@
+/*
+ * 2_b3.c
+ *
+ * Created: 2/27/2024 10:29:19 AM
+ * Author: letung
+ */
+
+#include <mega328p.h>
+#include <delay.h>
+int i = 0;
+
+
+
+
+
+
+
+void main(void)
+{
+DDRD = 0xFF;
+PORTD &= 0x00;
+DDRB = 0xFE;
+
+while(1){
+ if (PINB.0 ==0){
+  PORTD = 0;
+ }
+ else{
+  PORTD = 0x01;
+  PORTD = PORTD << i;
+  PORTD = PORTD << i-1;
+  i++;
+  if (i>7) i=0;
+  delay_ms(1000);
+ 
+ 
+ 
+ }
+}
+
+}

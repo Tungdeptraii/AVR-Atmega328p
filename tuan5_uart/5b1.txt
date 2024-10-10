@@ -1,0 +1,35 @@
+
+#include <mega328p.h>
+
+unsigned int n;
+
+//truyen 1 ki tu du lieu 
+void putchar(unsigned char data){
+    while(!(UCSR0A & 0b00100000));   //cho thanh ghi du lieu EMPTY
+    UDR0 = data;
+}
+
+
+
+
+void main(void)
+{
+
+n = 103;
+UBRR0H = n>>8;
+UBRR0L = n;
+UCSR0C = 0b00000110;     
+UCSR0B = 0b10011000;
+
+putchar('a');
+
+
+//cho phep ngat toan cuc
+#asm("sei")
+
+while (1)
+    {
+    // Please'/ write your application code here   
+      
+    }
+}

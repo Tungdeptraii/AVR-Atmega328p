@@ -1,0 +1,31 @@
+#include <mega328p.h>
+#include <delay.h>
+
+//Vector phuc vu ngat
+//interrupt [TIM1_OVF] void timer1_ovf_isr(void){
+//    PORTB.5 = !PORTB.5;
+//}
+
+void main(void){
+    
+    CLKPR = (1<<CLKPCE);            //Cho phep chia tan so
+    CLKPR = 0x00;                   //Dat he so chia la 16
+
+    DDRD = 0b01000000;
+    PORTD = 0b10111111;
+                                                                          
+    // Configure for Timer 0 as a counter in pin T0(PD4)
+    TCCR0A = 0b10000001;          
+    TCCR0B = 0b00000101;            //Clock timer = clockIO/1024         
+    TCNT0 = 0x00; 
+    OCR0A = 25;
+    
+    while (1){
+    // Please write your application code here  
+    delay_ms(1000);
+    OCR0A += 25;
+    if(OCR0A == 250){
+        OCR0A = 25;
+    }
+    }
+}

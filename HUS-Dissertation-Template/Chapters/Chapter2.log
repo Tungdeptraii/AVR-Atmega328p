@@ -1,0 +1,1365 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.23)  21 NOV 2023 15:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./Chapter2.tex
+(Chapter2.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-07>
+! Undefined control sequence.
+l.3 \chapter
+            {Thiết kế hệ thống} % Tên của chương
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \chapter{T
+              hiết kế hệ thống} % Tên của chương
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \chapter{Thiế
+                   t kế hệ thống} % Tên của chương
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no k in font nullfont!
+
+! LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \chapter{Thiết kế
+                          hệ thống} % Tên của chương
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no h in font nullfont!
+
+! LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \chapter{Thiết kế hệ
+                               thống} % Tên của chương
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+
+! LaTeX Error: Unicode character ố (U+1ED1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \chapter{Thiết kế hệ thố
+                                    ng} % Tên của chương
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[]
+ []
+
+! Undefined control sequence.
+l.18 \section
+             {Giới thiệu}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \section{G
+               iới thiệu}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ớ (U+1EDB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \section{Giớ
+                   i thiệu}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \section{Giới thiệ
+                           u}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no u in font nullfont!
+Missing character: There is no D in font nullfont!
+
+! LaTeX Error: Unicode character ự (U+1EF1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 Dự
+         a vào lý thuyết của thuật toán điều khiển PID, tôi �...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+LaTeX Font Info:    Trying to load font information for +cmr on input line 19.
+LaTeX Font Info:    No file cmr.fd. on input line 19.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 19.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.19 Dựa và
+              o lý thuyết của thuật toán điều khiển PID, tôi �...
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 19.
+
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no y in font nullfont!
+
+! LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 Dựa vào lý thuyế
+                           t của thuật toán điều khiển PID, tôi �...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+
+! LaTeX Error: Unicode character ủ (U+1EE7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 Dựa vào lý thuyết củ
+                                 a thuật toán điều khiển PID, tôi �...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+
+! LaTeX Error: Unicode character ậ (U+1EAD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 Dựa vào lý thuyết của thuậ
+                                         t toán điều khiển PID, tôi �...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: Command \dj unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...a vào lý thuyết của thuật toán đ
+                                                  iều khiển PID, tôi đ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ề (U+1EC1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�o lý thuyết của thuật toán điề
+                                                  u khiển PID, tôi đã x...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no u in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ể (U+1EC3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...huyết của thuật toán điều khiể
+                                                  n PID, tôi đã xây dự...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Command \dj unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...thuật toán điều khiển PID, tôi đ
+                                                  ã xây dựng một số ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no x in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Unicode character ự (U+1EF1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...n điều khiển PID, tôi đã xây dự
+                                                  ng một số mô hình th...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no m in font nullfont!
+
+! LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�u khiển PID, tôi đã xây dựng mộ
+                                                  t số mô hình thực t�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Unicode character ố (U+1ED1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...ển PID, tôi đã xây dựng một số
+                                                   mô hình thực tế có...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+
+! LaTeX Error: Unicode character ự (U+1EF1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�ã xây dựng một số mô hình thự
+                                                  c tế có sử dụng b�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+
+! LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�y dựng một số mô hình thực tế
+                                                   có sử dụng bộ đi�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Unicode character ử (U+1EED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ... một số mô hình thực tế có sử
+                                                   dụng bộ điều khi�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Unicode character ụ (U+1EE5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...t số mô hình thực tế có sử dụ
+                                                  ng bộ điều khiển n�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+
+! LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...mô hình thực tế có sử dụng bộ
+                                                   điều khiển này. Ba ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Command \dj unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ... hình thực tế có sử dụng bộ đ
+                                                  iều khiển này. Ba mô...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ề (U+1EC1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...nh thực tế có sử dụng bộ điề
+                                                  u khiển này. Ba mô hì...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no u in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ể (U+1EC3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...c tế có sử dụng bộ điều khiể
+                                                  n này. Ba mô hình đư�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+
+! LaTeX Error: Command \dj unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...bộ điều khiển này. Ba mô hình đ
+                                                  ược xây dựng bao gồm:
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Unicode character ư (U+01B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�� điều khiển này. Ba mô hình đư
+                                                  ợc xây dựng bao gồm:
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ợ (U+1EE3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...điều khiển này. Ba mô hình đượ
+                                                  c xây dựng bao gồm:
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Unicode character ự (U+1EF1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...ển này. Ba mô hình được xây dự
+                                                  ng bao gồm:
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+
+! LaTeX Error: Unicode character ồ (U+1ED3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...Ba mô hình được xây dựng bao gồ
+                                                  m:
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--20
+[]
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^^Ra
+ []
+
+
+Overfull \hbox (5.2778pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^^Sy
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^^Sa
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ~a
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^a
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^^R^^P
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^^So
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^^Ra
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^^R^^P
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\/cmr/m/n/10 ^a
+ []
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 22--23
+\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 22--23
+\/cmr/m/n/10 ^^R^^P
+ []
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+
+! LaTeX Error: Command \dj unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 	\item Mô hình đ
+                        iều khiển vị trí động cơ DC Encoder.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ề (U+1EC1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 	\item Mô hình điề
+                            u khiển vị trí động cơ DC Encoder.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no u in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ể (U+1EC3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 	\item Mô hình điều khiể
+                                    n vị trí động cơ DC Encoder.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+
+! LaTeX Error: Unicode character ị (U+1ECB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 	\item Mô hình điều khiển vị
+                                           trí động cơ DC Encoder.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+
+! LaTeX Error: Command \dj unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 	\item Mô hình điều khiển vị trí đ
+                                                  ộng cơ DC Encoder.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ... Mô hình điều khiển vị trí độ
+                                                  ng cơ DC Encoder.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no c in font nullfont!
+
+! LaTeX Error: Unicode character ơ (U+01A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...ình điều khiển vị trí động cơ
+                                                   DC Encoder.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 23--24
+\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 23--24
+\/cmr/m/n/10 ^^R^^P
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 23--24
+\/cmr/m/n/10 ^^S^^P
+ []
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 24--25
+\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 24--25
+\/cmr/m/n/10 ^^R^^P
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 24--25
+\/cmr/m/n/10 ^^Ro
+ []
+
+! Undefined control sequence.
+l.28 \section
+             {Mô hình Ball and Beam sử dụng thuật toán PID}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Unicode character ử (U+1EED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{Mô hình Ball and Beam sử
+                                           dụng thuật toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Unicode character ụ (U+1EE5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{Mô hình Ball and Beam sử dụ
+                                               ng thuật toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+
+! LaTeX Error: Unicode character ậ (U+1EAD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...Mô hình Ball and Beam sử dụng thuậ
+                                                  t toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+
+Overfull \hbox (25.00002pt too wide) in paragraph at lines 28--29
+[]\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 28--29
+\/cmr/m/n/10 ^^R^^P
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 28--29
+\/cmr/m/n/10 ^^Sa
+ []
+
+! Undefined control sequence.
+l.30 \subsection
+                {Tổng quan}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+
+! LaTeX Error: Unicode character ổ (U+1ED5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \subsection{Tổ
+                     ng quan}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--32
+[]
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 30--32
+\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 30--32
+\/cmr/m/n/10 ^^R^^P
+ []
+
+! Undefined control sequence.
+l.33 \section
+             {Mô hình điều khiển vị trí động cơ DC Encoder s�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+
+! LaTeX Error: Command \dj unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \section{Mô hình đ
+                          iều khiển vị trí động cơ DC Encoder s�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ề (U+1EC1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \section{Mô hình điề
+                              u khiển vị trí động cơ DC Encoder s�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no u in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Unicode character ể (U+1EC3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \section{Mô hình điều khiể
+                                      n vị trí động cơ DC Encoder s�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+
+! LaTeX Error: Unicode character ị (U+1ECB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \section{Mô hình điều khiển vị
+                                             trí động cơ DC Encoder s�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+
+! LaTeX Error: Command \dj unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...ion{Mô hình điều khiển vị trí đ
+                                                  ộng cơ DC Encoder sử ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...{Mô hình điều khiển vị trí độ
+                                                  ng cơ DC Encoder sử d�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no c in font nullfont!
+
+! LaTeX Error: Unicode character ơ (U+01A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...ình điều khiển vị trí động cơ
+                                                   DC Encoder sử dụng th...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Unicode character ử (U+1EED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...ển vị trí động cơ DC Encoder sử
+                                                   dụng thuật toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Unicode character ụ (U+1EE5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...vị trí động cơ DC Encoder sử dụ
+                                                  ng thuật toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+
+! LaTeX Error: Unicode character ậ (U+1EAD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ... động cơ DC Encoder sử dụng thuậ
+                                                  t toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+
+Overfull \hbox (25.00002pt too wide) in paragraph at lines 33--34
+[]\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 33--34
+\/cmr/m/n/10 ^^R^^P
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 33--34
+\/cmr/m/n/10 ^^S^^P
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 33--34
+\/cmr/m/n/10 ^^Sa
+ []
+
+! Undefined control sequence.
+l.35 \subsection
+                {Tổng quan}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+
+! LaTeX Error: Unicode character ổ (U+1ED5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \subsection{Tổ
+                     ng quan}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 35--36
+[]
+ []
+
+! Undefined control sequence.
+l.37 \section
+             {Mô hình xe dò line sử dụng thuật toán PID}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Unicode character ử (U+1EED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \section{Mô hình xe dò line sử
+                                         dụng thuật toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Unicode character ụ (U+1EE5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \section{Mô hình xe dò line sử dụ
+                                             ng thuật toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+
+! LaTeX Error: Unicode character ậ (U+1EAD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...n{Mô hình xe dò line sử dụng thuậ
+                                                  t toán PID}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+
+Overfull \hbox (25.00002pt too wide) in paragraph at lines 37--38
+[]\/cmr/m/n/10 ^o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 37--38
+\/cmr/m/n/10 ^^R^^P
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 37--38
+\/cmr/m/n/10 ^^Ro
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 37--38
+\/cmr/m/n/10 ^^Sa
+ []
+
+! Undefined control sequence.
+l.39 \subsection
+                {Tổng quan}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+
+! LaTeX Error: Unicode character ổ (U+1ED5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \subsection{Tổ
+                     ng quan}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+)
+! Emergency stop.
+<*> ./Chapter2.tex
+                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 62 strings out of 476339
+ 750 string characters out of 5797934
+ 1851340 words of memory out of 5000000
+ 20586 multiletter control sequences out of 15000+600000
+ 512287 words of font info for 32 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,1n,32p,256b,105s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

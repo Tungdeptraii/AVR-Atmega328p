@@ -1,0 +1,11 @@
+VERSION:3 SOURCE_TIMESTAMP:567E614A
+NODE:I LEVEL:0 LINE:8 "D:\CodeVisionAVR\inc\mega328p.h"
+NODE:I LEVEL:0 LINE:9 "D:\CodeVisionAVR\inc\delay.h"
+NODE:M LEVEL:0 LINE:10 "scale"
+NODE:I LEVEL:0 LINE:11 "D:\thuc hanh he thong nhung\day6_analog_to_digital_converter_adc\usart.h"
+NODE:I LEVEL:0 LINE:12 "D:\thuc hanh he thong nhung\day6_analog_to_digital_converter_adc\ADCLib.h"
+NODE:V LEVEL:0 LINE:13 "ADC_val -> RAM:????"
+NODE:V LEVEL:0 LINE:14 "voltage_val -> RAM:????"
+NODE:V LEVEL:0 LINE:15 "demi_part -> RAM:????"
+NODE:V LEVEL:0 LINE:16 "int_part -> RAM:????"
+NODE:F LEVEL:0 LINE:18 "main(void)"

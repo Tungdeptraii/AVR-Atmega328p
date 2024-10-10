@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Khóa luận tốt nghiệp/Tiểu luận 
+% LaTeX Template
+% Phiên bản 1.0 (tạo ra ngày 05/10/2022)
+% Edited &Modified by VietNC ngày 12/12/2022
+%
+% Template này có thể được download tại:
+% https://github.com/vietnc/HUS-template
+% https://github.com/cpc1996/HUS-Dissertation-Template
+% 
+%
+% Phiên bản 1.0 được chỉnh sửa bởi:
+% Công Phương Cao (congphuongcao_t59@hus.edu.vn)
+% Nguyễn Cảnh Việt (vietncp@gmail.com)
+% Nguyễn Tiến Cường (ngtiencuong@gmail.com)
+%
+% Template được tham khảo từ một phiên bản template của:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	(KHÔNG CHỈNH SỬA PHẦN NÀY)
+%
+%	PHẦN 1: CÁC PACKAGE CƠ BẢN VÀ CÁC TÙY CHỈNH VĂN BẢN
+%----------------------------------------------------------------------------------------
+\input{1.setup}
+%----------------------------------------------------------------------------------------
+%	PHẦN 3: THÔNG TIN VỀ Khóa luận tốt nghiệp/Tiểu luận (THESIS INFORMATION)
+% 	Điền thông tin của các bạn trong file(2.thesis-information) này 
+%----------------------------------------------------------------------------------------
+\input{2.thesis-information}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\begin{document}
+\lstset{style=codeC}	% Thiết lập ngôn ngữ C/C++ là ngôn ngữ mặc định cho phần liệt kê souce code của cả bài
+\frontmatter 			% Sử dụng hệ thống đánh số La Mã (i, ii, iii, iv...) cho những trang trước phần mục lục
+\pagestyle{plain} 
+%----------------------------------------------------------------------------------------
+%	(KHÔNG CHỈNH SỬA PHẦN NÀY)%
+%	PHẦN 4: TRANG TIÊU ĐỀ/TRANG BÌA (TITLE PAGE)
+%----------------------------------------------------------------------------------------
+% TRANG BÌA CHÍNH:
+\include{3.main-cover}
+% TRANG BÌA PHỤ:
+\include{4.sub-cover}
+
+\begin{center}
+	\bfseries 
+	THÀNH VIÊN NHÓM 1
+	\mdseries
+\end{center}
+\begin{enumerate}
+	\item Lê Sơn Tùng - 21002243
+	\item Lê Trung Kiên - 21002214
+	\item Phạm Thu Thủy -  21002240
+	\item Từ Văn Hoài Nam - 21002220
+	\item Ngô Hoài Nam - 21002219
+	\item Trần Tuấn Phong - 21002223
+	\item Nguyễn Phan Ngọc Anh - 21002188
+\end{enumerate}
+
+
+%----------------------------------------------------------------------------------------
+%	PHẦN 5: DANH NGÔN (QUOTES)
+%----------------------------------------------------------------------------------------
+%\vspace*{0.2\textheight}
+
+%\noindent\enquote{\itshape 
+%	Cái tôi và sự hiểu biết tỷ lệ nghịch với nhau. Hiểu biết càng nhiều cái tôi càng bé. Hiểu biết càng ít, cái tôi càng to.
+%}\bigbreak
+
+%\hfill Albert Einstein
+%----------------------------------------------------------------------------------------
+%	PHẦN 6: LỜI CẢM ƠN (ACKNOWLEDGEMENTS)
+%	Các bạn ghi lời cảm ơn vào file(5.ack) này.
+%----------------------------------------------------------------------------------------
+\include{5.ack}
+%----------------------------------------------------------------------------------------
+%	(KHÔNG CHỈNH SỬA PHẦN NÀY)
+%
+%	PHẦN 7: MỤC LỤC (LIST OF CONTENTS/FIGURES/TABLES PAGES)
+%	ĐẶT KHOẢNG CÁCH GIŨA CÁC TIÊU ĐỀ CỦA PHẦN 7
+%----------------------------------------------------------------------------------------
+\begin{spacing}{1.15}
+	\tableofcontents 	% In ra mục lục chính
+\end{spacing}
+
+\begin{spacing}{1.15}
+	\listoffigures 		% In ra danh sách hình vẽ
+\end{spacing}
+
+%\begin{spacing}{1.15}
+%	\listoftables		% In ra danh sách bảng
+%\end{spacing}
+
+%----------------------------------------------------------------------------------------
+%	PHẦN 8: DANH SÁCH TÊN VIẾT TẮT (ABBREVIATIONS)
+%
+%	Các từ viết tắt các bạn ghi ở đây
+%----------------------------------------------------------------------------------------
+\begin{abbreviations}{ll} % Thêm danh sách tên viết tắt (dưới dạng một bảng có 2 cột)
+
+\textbf{SP} & \textbf{S}et \textbf{P}oint\\
+\textbf{PV} & \textbf{P}rocess \textbf{V}ariable\\
+\textbf{MV} & \textbf{M}anipulated \textbf{V}ariable\\
+\textbf{e} & \textbf{e}rorr \\
+\textbf{P} & \textbf{P}roportional\\
+\textbf{I} & \textbf{I}ntegral\\
+\textbf{D} & \textbf{D}erivative\\
+\end{abbreviations}
+%----------------------------------------------------------------------------------------
+%%	PHẦN 9: CÁC HẰNG SỐ VẬT LÝ/THÔNG SỐ KĨ THUẬT (PHYSICAL CONSTANTS/OTHER DEFINITIONS)
+%%----------------------------------------------------------------------------------------
+%\begin{constants}{lr@{${}={}$}l} % Thêm danh sách các hằng số (dưới dạng một bảng có 3 cột)
+%
+%%	Lệnh \SI{}{} được cung cấp bởi gói siunitx, hãy đọc tài liệu hướng dẫn để biết cách sử dụng nó
+%
+%%	Tên hằng số 	 & $Biểu tượng$	& $Hằng số$ cùng với đơn vị\\
+%	Vận tốc ánh sáng & $c_{0}$		& \SI{2.99792458e8}{\meter\per\second} (chính xác)\\
+%
+%\end{constants}
+%%----------------------------------------------------------------------------------------
+%%	PHẦN 10: DANH SÁCH KÝ HIỆU (SYMBOLS)
+%%----------------------------------------------------------------------------------------
+%
+%\begin{symbols}{lll} % Thêm danh sách các ký hiệu (dưới dạng một bảng có 3 cột)
+%
+%%   Ký hiệu	& Ý nghĩa		& Đơn vị \\
+%	$a$		& khoảng cách	& \si{\meter} \\
+%	$P$		& công suất		& \si{\watt} (\si{\joule\per\second}) \\
+%
+%	\addlinespace % Khoảng cách để phân biệt giữa ký hiệu Latin với ký hiệu La Mã
+%
+%	$\omega$ & tần số góc	& \si{\radian} \\
+%
+%\end{symbols}
+
+%----------------------------------------------------------------------------------------
+%	(KHÔNG CHỈNH SỬA PHẦN NÀY)
+%
+%	PHẦN 11: LỜI ĐỀ TẶNG (DEDICATION)
+%----------------------------------------------------------------------------------------
+
+%\dedicatory{Dành tặng/Dành cho/Gửi tới\ldots} 
+
+
+%----------------------------------------------------------------------------------------
+%	PHẦN 12: NỘI DUNG/CÁC CHƯƠNG Khóa luận tốt nghiệp/Tiểu luận (THESIS CONTENT - CHAPTERS)
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Bắt đầu đánh số trang (1,2,3...)
+
+\pagestyle{plain}
+
+% Hãy thêm những chương (chapter) của khóa luận/tiểu luận vào thư mục Chapters
+% Hãy bỏ chú thích những dòng nếu bạn đã bổ sung những chương vào
+
+\include{Chapters/Chapter0}
+\include{Chapters/Chapter1}
+\include{Chapters/Chapter2} 
+\include{Chapters/Chapter3}
+%\include{Chapters/Chapter4} 
+%\include{Chapters/Chapter5} 
+
+%----------------------------------------------------------------------------------------
+%	(KHÔNG CHỈNH SỬA PHẦN NÀY)
+%
+%	PHẦN 13: TÀI LIỆU THAM KHẢO
+%----------------------------------------------------------------------------------------
+
+\begin{spacing}{1.15}
+	\printbibliography[heading=bibintoc, title=Tài liệu tham khảo] % In ra tài liệu tham khảo
+	\nocite{dung}
+	\nocite{nam}
+	\nocite{aastrom2001future}
+	\nocite{aastrom2002control}
+	\nocite{borase2021review}
+	\nocite{kiong1999advances}
+	\nocite{lin2000self}
+	\nocite{vilanova2012pid}
+	\nocite{bao1}
+	\nocite{bao2}
+	\nocite{bao3}
+	\nocite{ang2005pid}
+
+
+\end{spacing}
+
+%----------------------------------------------------------------------------------------
+%	PHẦN 14: PHỤ LỤC (THESIS CONTENT - APPENDICES)
+%----------------------------------------------------------------------------------------
+
+\appendix % Nói với LaTeX rằng những chương về sau được tính là phụ lục
+
+% Hãy thêm những phụ lục (appendix) của khóa luận/tiểu luận vào thư mục Appendices
+% Hãy bỏ chú thích những dòng nếu bạn đã bổ sung những phụ lục vào
+
+\include{Appendices/AppendixA}
+\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
+%----------------------------------------------------------------------------------------------------------------------------------------

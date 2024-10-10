@@ -1,0 +1,43 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+TWI_Rx_Buf                                                                        0x0400      50
+TWI_Tx_Buf                                                                        0x0432      50
+UART_Rx_Buf                                                                       0x0464      50
+UART_Data_In                                                                      0x0496       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+TWI_Rx_Index                                                                      R3,R4        2
+TWI_Tx_Index                                                                      R5,R6        2
+TWI_Data_In                                                                       R7,R8        2
+Status_Code                                                                       R10          1
+i                                                                                 R11,R12      2
+UART_Rx_Index                                                                     R13,R14      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+uart_init                                                                         0x0010D     33
+uart_putchar                                                                      0x0012E      9
+uart_putstring                                                                    0x00137     21
+uart_put_int                                                                      0x0014C     50
+TWI_Init                                                                          0x0017E     38
+TWI_Interupt_Enable                                                               0x001A4      4
+TWI_Interupt_Disable                                                              0x001A8      4
+TWI_Start                                                                         0x001AC     17
+TWI_Stop                                                                          0x001BD      4
+TWI_SLA_RW                                                                        0x001C1     30
+TWI_Send_Byte                                                                     0x001DF     22
+TWI_Send_Array                                                                    0x001F5     25
+TWI_Error                                                                         0x0020E      3
+TWI_Master_Send                                                                   0x00211     32
+TWI_Slave_Int                                                                     0x00231    116
+usart_rx_isr                                                                      0x002A5     36
+TWI_isr                                                                           0x002C9     28
+main                                                                              0x002E5     95

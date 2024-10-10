@@ -1,0 +1,20 @@
+/*
+ * 1wire.c
+ *
+ * Created: 10/5/2023 11:38:52 PM
+ * Author: User
+ */
+
+#include <mega328p.h>
+#include "1wire_lib.h"
+#include "1wire_lib.c"
+#include "usart.h"
+
+void main(void)
+{
+while (1)
+    {
+    // Please write your application code here
+
+    }
+}

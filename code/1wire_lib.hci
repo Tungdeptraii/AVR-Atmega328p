@@ -1,0 +1,8 @@
+VERSION:3 SOURCE_TIMESTAMP:58905F66
+NODE:I LEVEL:0 LINE:1 "D:\cvavreval\inc\mega328p.h"
+NODE:I LEVEL:0 LINE:2 "D:\cvavreval\inc\delay.h"
+NODE:F LEVEL:0 LINE:6 "ow_reset(void)"
+NODE:F LEVEL:0 LINE:20 "ow_write_bit(unsigned char data)"
+NODE:F LEVEL:0 LINE:32 "ow_read_bit(void)"
+NODE:F LEVEL:0 LINE:46 "ow_write_byte(unsigned char data)"
+NODE:F LEVEL:0 LINE:54 "ow_read_byte(void)"

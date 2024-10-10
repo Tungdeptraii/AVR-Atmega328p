@@ -1,0 +1,62 @@
+#include <mega328p.h>
+#include <delay.h>
+
+
+
+char ow_reset(void){
+	unsigned int i;
+	DDRD |= (0x01<<2);  //DDRD.2=1
+	PORTD &= (~(0x01<<2)); // PORTD.2 =0
+	delay_us(480);
+	//input
+	DDRD &= ~(0x01<<2);
+	delay_us(70); 
+	
+	i = PIND & (0x01<<2);
+	delay_us(410);
+	return i;	
+}
+
+void ow_write_bit(char data){
+	
+	DDRD |= (0x01<<2); //DDRD.2 = 1; //output
+	PORTD &= (~(0x01<<2)); //PORTD.2 = 0;
+	delay_us(6);
+	if (data) DDRD &= ~(0x01<<2);  //DDRD.2 = 0;
+	delay_us(54);
+	DDRD &= ~(0x01<<2);  //DDRD.2 = 0;
+	delay_us(10);
+	
+}
+
+char ow_read_bit(){
+	char n;
+	DDRD |= (0x01<<2); //output
+	PORTD &= ~(0x01<<2);
+	delay_us(6);
+	DDRD &= ~(0x01<<2);  //input
+	delay_us(9);
+	if (PIND & (0x01<<2)) n = 1;
+	delay_us(55);
+	return n;	
+}
+
+
+
+void ow_write_byte(char data){
+	unsigned char i = 8;
+	while (i--){
+		ow_write_bit(data&1); //(data & 0x01)
+		data >>= 1; // data = data >>1			
+	}
+}
+
+char ow_read_byte(){
+	unsigned char i = 8, data = 0;
+    
+	while(i--){
+		data >>= 1;
+		data |= (ow_read_bit() << 7);
+	}
+	return data;
+}

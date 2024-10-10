@@ -1,0 +1,49 @@
+% Chương 3
+
+\chapter{KẾT QUẢ} % Tên của chương
+
+\label{Chapter3} % Để trích dẫn chương này ở chỗ nào đó trong bài, hãy sử dụng lệnh \ref{Chapter3} 
+
+%----------------------------------------------------------------------------------------
+
+% Định nghĩa một số lệnh cần thiết để điều chỉnh định dạng cho một số nội dung nhất định trong bài
+
+%\newcommand{\keyword}[1]{\textbf{#1}}
+%\newcommand{\tabhead}[1]{\textbf{#1}}
+%\newcommand{\code}[1]{\texttt{#1}}
+%\newcommand{\file}[1]{\texttt{\bfseries#1}}
+%\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%----------------------------------------------------------------------------------------
+
+\section{Kết luận chung}
+Sau thời gian tìm hiểu về lý thuyết của bộ điều khiển PID cùng với ứng dụng của bộ điều khiển này vào mô hình điều khiển vị trí góc quay động cơ DC Encoder, báo cáo này đã đạt được một số kết quả. 
+
+\subsection{Bộ điều khiển PID}
+\begin{itemize}
+	\item Lịch sử hình thành, cơ cấu hoạt động của thuật toán điều khiển PID.	
+	\item Hiểu rõ về bộ điều khiển PID dạng song song, các thành phần và vai trò của chúng trong bộ điều khiển.
+	\item Tìm hiểu về một số phương pháp tìm độ lợi $K_p$ $K_i$ $K_d$ giúp tối ưu độ ổn định của các hệ thống trong quá trình hoạt động.
+	\item Tính hiệu quả, độ tin cậy của bộ điều khiển PID, các ứng dụng của bộ điều khiển này trong đời sống con người.
+	\item Xây dựng một số mô hình sử dụng thuật toán PID nhằm chứng minh cơ cấu hoạt động, tính hiệu quả của thuật toán.
+\end{itemize}
+
+\subsection{Các mô hình thực tế sử dụng thuật toán PID}
+Mô hình sử dụng thuật toán PID đều hoạt động một cách ổn định. Phản hồi của hệ thống nhanh khi bị tác động bởi các yếu tố khách quan. Bộ điều khiển này đã chứng minh được tính ổn định và tối ưu của nó trong việc điều khiển một số hệ thống. Các hệ thống trong quá trình hoạt động đều đạt được tính ổn định cao, đồng thời cho thấy tính đơn giản và hiệu quả của thuật toán PID.
+\newpage
+\subsection{Các chức năng của vi điều khiển}
+\begin{itemize}
+	\item Học được kỹ năng đọc datasheet của linh kiện cần sử dụng.
+	\item Hiểu về lập trình nhúng AVR, chức năng của các thanh ghi trong vi điều khiển ATmega328p.
+	\item Thành thạo trong việc sử dụng các chức năng khác của Timer như: tạo xung PWM. Sử dụng ngắt để xử lý các tình huống trong lập trình vi điều khiển.
+	\item Hiểu rõ và ứng dụng các giao thức được sử dụng phổ biến như TWI, USART...
+	\item Học được cách viết chương trình nhằm tối ưu hóa hoạt động của vi điều khiển.
+	  
+\end{itemize}
+\section{Một số vấn đề còn tồn tại của đề tài}
+Cùng với các kết quả đạt được, đề tài này còn tồn tại một số vấn đề. Mô hình và bộ điều khiển PID còn ở dạng đơn giản. Chưa mô hình hóa được hệ thống tổng thể và phương trình toán học cụ thể cho từng mô hình. Ngoài ra, chưa tìm hiểu và khảo sát các phương pháp tìm độ lợi khác.
+ 
+\section{Hướng phát triển của đề tài}
+Bên cạnh kết quả thu được và một số hạn chế, đề tài này vẫn có thể được phát triển hơn nữa trong tương lai. Nâng cấp các cảm biến đang sử dụng trong các mô hình, sử dụng các chip xử lí tốc độ cao nhằm tối ưu hơn nữa quá trình tính toán và các hệ thống. Tìm hiểu về một số phương thức truyền dữ liệu không dây để có thể xử lý hệ thống. Nghiên cứu sâu hơn về bộ điều khiển PID, các dạng khác của bộ điều khiển này như: Dạng Laplace, dạng nối tiếp/ tương hỗ... Có thể biễu diễn các mô hình dưới dạng phương trình toán học. Sử dụng thuật toán PID trong các mô hình lớn hơn như: điều khiển lò nhiệt, chế tạo drone, xe segway...
+
+

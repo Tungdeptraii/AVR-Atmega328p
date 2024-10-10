@@ -1,0 +1,5 @@
+VERSION:3 SOURCE_TIMESTAMP:58825E0B
+NODE:I LEVEL:0 LINE:1 "D:\cvavreval\inc\mega328p.h"
+NODE:I LEVEL:0 LINE:2 "D:\cvavreval\inc\delay.h"
+NODE:F LEVEL:0 LINE:4 "ADC_init(unsigned int pin)"
+NODE:F LEVEL:0 LINE:12 "read_ADC(void)"

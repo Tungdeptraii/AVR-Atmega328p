@@ -1,0 +1,241 @@
+#include <mega328p.h>
+#include <delay.h>
+#include "1wire_lib.h"
+
+unsigned char onewire_reset(void) {
+    unsigned char i;
+    //Set connected pin as Output and put it low        
+    onewire_DDR |= (1<<onewire_DQ); 
+    onewire_PORT &= (~ (1<<onewire_DQ)); 
+    //low for 480us
+    delay_us(480);
+
+    //release line but set connected pin as Input 
+    onewire_DDR &= ~(1<<onewire_DQ); //input
+    //wait for 70uS
+    delay_us(70);
+
+    //get value and wait 410us
+    i = (onewire_PIN & (1<<onewire_DQ));
+    delay_us(410);
+
+    //return the read value, 
+    //0= device on bus, 1= no device on bus
+    return i;
+}
+
+/////////////////////////////////////////
+//This function write a bit on the bus
+void onewire_writebit(unsigned char b){
+    //low for 6uS
+    onewire_DDR |= (1<<onewire_DQ); //output
+    onewire_PORT &= ~ (1<<onewire_DQ); //low
+    delay_us(6);
+
+    //if we want to write 1, release the line 
+    //if not keep it low)
+    if(b)
+        onewire_DDR &= ~(1<<onewire_DQ); //input
+
+    //wait 54uS and release the line
+    delay_us(54);
+    onewire_DDR &= ~(1<<onewire_DQ); //input
+    //wait for another 10us
+    delay_us(10);
+}
+
+///////////////////////////////////////////////////
+//This function read a bit on the bus
+unsigned char onewire_readbit(void){
+    unsigned char b=0;
+
+    //low for 5uS
+    onewire_PORT &= ~ (1<<onewire_DQ); //low
+    onewire_DDR |= (1<<onewire_DQ); //output
+    delay_us(5);
+
+    //release line and wait for 15uS
+    onewire_DDR &= ~(1<<onewire_DQ); //input
+    delay_us(10);
+
+    //read the value
+    if(onewire_PIN & (1<<onewire_DQ))
+        b=1;
+
+    //wait 55uS and return read value
+    delay_us(55);
+    return b;
+}
+
+// Write one byte
+void onewire_writebyte(unsigned char byte){
+    unsigned char i=8;
+    while(i--){
+        onewire_writebit(byte&1);
+        byte >>= 1;
+    }
+}
+// Read one byte
+unsigned char onewire_readbyte(void){
+    unsigned char i=8, data=0;
+    while(i--){
+        data >>= 1;
+        data |= (onewire_readbit()<<7);
+    }
+    return data;
+}
+
+// Get temperature
+float ds18b20_gettemp() {
+    unsigned int temperature_l;
+    unsigned int temperature_h;
+    float retd = 0;
+
+    #if onewire_STOPINTERRUPTONREAD == 1
+    #asm ("cli")
+    #endif
+
+    onewire_reset(); //reset
+    onewire_writebyte(onewire_CMD_SKIPROM); //skip ROM
+    onewire_writebyte(DS18B20_CMD_CONVERTTEMP); //start temperature conversion
+
+    while(!onewire_readbit()); //wait until conversion is complete
+
+    onewire_reset(); //reset
+    onewire_writebyte(onewire_CMD_SKIPROM); //skip ROM
+    onewire_writebyte(DS18B20_CMD_RSCRATCHPAD); //read scratchpad
+
+    //read 2 byte from scratchpad
+    temperature_l = onewire_readbyte();
+    temperature_h = onewire_readbyte();
+
+    #if onewire_STOPINTERRUPTONREAD == 1
+    #asm ("sei")
+    #endif
+
+    //convert the 12 bit value obtained
+    retd = ( ( (long)temperature_h << 8 ) + temperature_l ) * 0.0625;
+
+    return retd;
+}
+void ds18b20_setresolution(unsigned char resolution) {
+    unsigned char configuration;
+    
+    // Read current configuration
+    onewire_reset(); //reset
+    onewire_writebyte(onewire_CMD_SKIPROM); //skip ROM
+    onewire_writebyte(DS18B20_CMD_RSCRATCHPAD); //read scratchpad
+
+    onewire_readbyte(); // Read temperature low byte
+    onewire_readbyte(); // Read temperature high byte
+    configuration = onewire_readbyte(); // Read configuration byte
+
+    // Set resolution bits
+    switch (resolution) {
+        case 9:
+            configuration &= ~(1<<5);
+            configuration &= ~(1<<6);
+            break;
+        case 10:
+            configuration |= (1<<5);
+            configuration &= ~(1<<6);
+            break;
+        case 11:
+            configuration &= ~(1<<5);
+            configuration |= (1<<6);
+            break;
+        case 12:
+            configuration |= (1<<5);
+            configuration |= (1<<6);
+            break;
+        default:
+            return; // Invalid resolution
+    }
+
+    // Write new configuration
+    onewire_reset(); //reset
+    onewire_writebyte(onewire_CMD_SKIPROM); //skip ROM
+    onewire_writebyte(DS18B20_CMD_WSCRATCHPAD); //write scratchpad
+    onewire_writebyte(0); // Thanh ghi TH
+    onewire_writebyte(0); // Thanh ghi TL
+
+    onewire_reset(); //reset
+    onewire_writebyte(onewire_CMD_SKIPROM); //skip ROM
+    onewire_writebyte(DS18B20_CMD_CPYSCRATCHPAD); //copy scratchpad
+    delay_ms(20); //wait for copying
+}
+void search_rom(unsigned char *roms)
+{
+    unsigned char bitMask;
+    unsigned char bitA;
+    unsigned char bitB;
+    unsigned char currentBit;
+    unsigned char romByteIndex;
+    unsigned char searchDirection;
+    unsigned char lastZero = 0;
+    unsigned char idBitIndex;
+
+    // Set all bits of ROMs to 0
+    for (romByteIndex = 0; romByteIndex < 8; romByteIndex++) {
+        roms[romByteIndex] = 0;
+    }
+
+    // Set the bitMask to 1 to start the search
+    bitMask = 0x01;
+
+    // Initialize the searchDirection to 0
+    searchDirection = 0;
+
+    // Loop through all of the ID bits
+    for (idBitIndex = 0; idBitIndex < 64; idBitIndex++) {
+        // Reset the currentBit variable
+        currentBit = 0;
+
+        // Perform a search step
+        onewire_reset();
+        onewire_writebyte(onewire_CMD_SEARCHROM);
+        for (romByteIndex = 0; romByteIndex < 8; romByteIndex++) {
+            bitA = onewire_readbit();
+            bitB = onewire_readbit();
+            if (bitA && bitB) {
+                // There are no devices on the bus
+                return;
+            }
+            if (!bitA && !bitB) {
+                if (bitMask & (1 << romByteIndex)) {
+                    // Set the search direction to 1
+                    searchDirection = 1;
+                }
+            } else {
+                if (bitA) {
+                    currentBit = 1;
+                }
+            }
+
+            // Write the current bit to the ROM byte
+            if (currentBit) {
+                roms[romByteIndex] |= bitMask;
+            } else {
+                roms[romByteIndex] &= ~bitMask;
+            }
+
+            // Write the bit to the bus
+            onewire_writebit(currentBit);
+        }
+
+        // Move the bitMask to the next bit
+        bitMask <<= 1;
+
+        // Check if we need to change the search direction
+        if (searchDirection) {
+            searchDirection = 0;
+            bitMask = 0x01 << lastZero;
+        } else {
+            // Record the last zero
+            lastZero = idBitIndex;
+        }
+
+        // Delay to prevent read errors
+        delay_us(10 + onewire_DELAYOFFSET);
+    }
+}

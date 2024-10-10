@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:567E61C7
+NODE:I LEVEL:0 LINE:1 "D:\CodeVisionAVR\inc\mega328p.h"
+NODE:I LEVEL:0 LINE:2 "D:\CodeVisionAVR\inc\delay.h"
+NODE:M LEVEL:0 LINE:4 "ADC_VREF_TYPE"
+NODE:F LEVEL:0 LINE:6 "adc_init(unsigned char input)"
+NODE:F LEVEL:0 LINE:18 "ADC_read(unsigned char input)"

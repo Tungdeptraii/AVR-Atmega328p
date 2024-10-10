@@ -1,0 +1,17 @@
+/*
+ * twi.c
+ *
+ * Created: 25/5/2023 9:14:47 AM
+ * Author: User
+ */
+
+#include <mega328p.h>
+
+void main(void)
+{
+while (1)
+    {
+    // Please write your application code here
+
+    }
+}

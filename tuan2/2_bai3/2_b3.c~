@@ -1,0 +1,38 @@
+/*
+ * 2_b3.c
+ *
+ * Created: 2/27/2024 10:29:19 AM
+ * Author: letung
+ */
+
+#include <mega328p.h>
+#include <delay.h>
+
+
+void blinkLedD(unsigned char pin, unsigned int duration){
+    PORTD = PORTD | (0x01<<pin);
+    delay_ms(duration);
+    PORTD = PORTD & (~(0x01<<pin));
+    delay_ms(duration);
+
+
+
+}
+
+void main(void)
+{
+DDRD = 0xFF;
+PORTD = 0;
+
+
+
+
+
+
+while (1)
+    {
+    // Please write your application code here
+    
+        blinkLedD(4,10000);
+    }
+}

@@ -1,0 +1,72 @@
+%----------------------------------------------------------------------------------------
+%	(KHÔNG CHỈNH SỬA PHẦN NÀY)
+%
+%	PHẦN 1: CÁC PACKAGE CƠ BẢN VÀ CÁC TÙY CHỈNH VĂN BẢN
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+12pt,
+oneside,
+english,
+doublespacing,
+nolistspacing,
+liststotoc,
+parskip,
+headsepline,
+chapterinoneline,
+]{MastersDoctoralThesis}
+
+% \usepackage[utf8]{inputenc} 
+\usepackage[utf8]{vietnam} 
+%\usepackage[T1]{fontenc}
+
+\usepackage{mathptmx}
+\usepackage{amsmath}
+\allowdisplaybreaks
+
+%https://www.overleaf.com/learn/latex/Biblatex_citation_styles
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex}
+\usepackage[backend=bibtex,style=numeric,citestyle=ieee,natbib=true]{biblatex}
+
+\addbibresource{main.bib}
+
+\usepackage[autostyle=true]{csquotes}
+
+
+%----------------------------------------------------------------------------------------
+%	PHẦN 2: CÁC PACKAGE BỔ TRỢ THÊM VÀO TRONG QUÁ TRÌNH BIÊN SOẠN
+%----------------------------------------------------------------------------------------
+
+\RequirePackage{setlst}		% Liệt kê/trích dẫn code
+
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage[fontsize=13pt]{scrextend}
+
+%https://www.sascha-frank.com/latex-font-size.html
+%https://tex.stackexchange.com/questions/103286/how-to-change-section-subsection-font-size
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\fontsize{13}{13}\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\fontsize{13}{13}\bfseries\itshape}{\thesubsection}{1em}{}
+
+%https://tex.stackexchange.com/questions/351961/how-to-indent-code-in-beginverbatim
+\usepackage{fancyvrb} 		% Fancy Verbatim
+\fvset{tabsize=4,vspace=0pt,fontsize=\footnotesize}
+
+\usepackage{longtable} 		% Bảng dài - Long table
+
+\usepackage[figuresright]{rotating} % Bảng ngang - Sideways table
+\usepackage{tabularx}
+
+\usepackage{fontawesome5} 	% Các biểu tượng, ký hiệu đặc biệt
+
+\usepackage{tikz} 			% Vẽ hình
+\usepackage{indentfirst}
+\setlength{\parindent}{0.5cm}	%Thut dau dong cho doan van
+\setlength{\parskip}{1.4ex plus 0.5ex minus 0.3ex}		% Tạo khoảng trống giữa 2 đoạn văn %spacing between two paragraph
+
+\usetikzlibrary{calc}

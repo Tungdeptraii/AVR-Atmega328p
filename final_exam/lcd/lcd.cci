@@ -1,0 +1,13 @@
+VERSION:3 SOURCE_TIMESTAMP:58B87818
+NODE:I LEVEL:0 LINE:18 "D:\cvavreval\inc\mega328p.h"
+NODE:I LEVEL:0 LINE:19 "D:\cvavreval\inc\stdio.h"
+NODE:I LEVEL:0 LINE:20 "D:\cvavreval\inc\delay.h"
+NODE:I LEVEL:0 LINE:21 "D:\cvavreval\inc\i2c.h"
+NODE:I LEVEL:0 LINE:22 "LCD_i2c.h"
+NODE:M LEVEL:0 LINE:25 "LCD_1"
+NODE:V LEVEL:0 LINE:29 "count1 -> R3,R4"
+NODE:V LEVEL:0 LINE:29 "count2 -> R5,R6"
+NODE:V LEVEL:0 LINE:29 "count3 -> R7,R8"
+NODE:V LEVEL:0 LINE:30 "data -> RAM:????"
+NODE:F LEVEL:0 LINE:35 "main(void)"
+NODE:F LEVEL:0 LINE:71 "Display(void)"

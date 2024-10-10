@@ -1,0 +1,34 @@
+/*
+ * 4_b3.c
+ * Author: letung
+ */
+
+#include <mega328p.h>
+
+void main(void)
+{
+
+    DDRB |= 0b00000010;         //set PB1 is output
+    PORTB  &= 0b11111101;
+
+    TCCR1A = 0b10000010; //set top = ICR, pre = 1024
+    TCCR1B = 0b00011101;
+
+    //set top = 46874 (1/3 = (16*10^6)/(1024*(TOP+1))
+    ICR1H = 0xB7;
+    ICR1L = 0x1A;
+
+    OCR1AH = 0x3D;
+    OCR1AL = 0x09;    //compare value = 1/3*TOP
+
+    
+
+
+
+
+
+while (1)
+    {
+    // Please write your application code here
+}
+}

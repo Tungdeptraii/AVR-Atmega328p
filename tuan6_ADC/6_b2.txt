@@ -1,0 +1,23 @@
+
+#include <mega328p.h>
+#include <uart.h>
+#include <delay.h>
+#include <ADCLib.h>
+unsigned int ADC_value;
+
+void main(void)
+{
+    uart_init(9600);
+    ADC_init(2);
+
+while (1)
+    {       
+    read_ADC();
+    ADC_value = ADCW;      
+    put_int(ADC_value);     
+    putstring("\n"); 
+    delay_ms(1000);
+     
+      
+    }
+}
